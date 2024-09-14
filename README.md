@@ -1,1 +1,1 @@
-# Redmine on Fargate
+# Redmica on Fargate
