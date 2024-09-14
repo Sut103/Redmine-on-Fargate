@@ -1,1 +1,1 @@
-# Redmine-on-Fargate
+# Redmine on Fargate
