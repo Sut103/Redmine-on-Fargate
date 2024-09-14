@@ -1,0 +1,18 @@
+services:
+  redmica:
+    build: .
+    restart: always
+    ports:
+      - 8080:3000
+    environment:
+      REDMINE_DB_POSTGRES: postgres
+      REDMINE_DB_USERNAME: redmica
+      REDMINE_DB_PASSWORD: redmica
+      REDMINE_PLUGINS_MIGRATE: true
+
+  postgres:
+    image: postgres:16-alpine
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: redmica
+      POSTGRES_USER: redmica
