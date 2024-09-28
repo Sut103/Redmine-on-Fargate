@@ -11,3 +11,4 @@ RUN git clone https://github.com/redmica/redmica_ui_extension.git ${PLUGINS_DIR}
     git clone https://github.com/suer/redmine_absolute_dates.git ${PLUGINS_DIR}/redmine_absolute_dates && \
     git clone https://github.com/suer/redmine_japanese_help.git ${PLUGINS_DIR}/redmine_japanese_help && \
     git clone https://github.com/mrliptontea/PurpleMine2.git ${THEMES_DIR}/PurpleMine2
+
