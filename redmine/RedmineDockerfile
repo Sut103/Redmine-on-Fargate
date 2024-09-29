@@ -1,4 +1,4 @@
-FROM redmica/redmica:3.0.2
+FROM redmica/redmica:3.0
 
 ARG PLUGINS_DIR=/usr/src/redmine/plugins
 ARG THEMES_DIR=/usr/src/redmine/themes

@@ -1,6 +1,8 @@
 services:
   redmica:
-    build: .
+    build:
+      context: .
+      dockerfile: RedmineDockerfile
     restart: always
     ports:
       - 8080:3000
@@ -11,7 +13,9 @@ services:
       REDMINE_PLUGINS_MIGRATE: true
 
   postgres:
-    image: postgres:16-alpine
+    build:
+      context: .
+      dockerfile: PostgresDockerfile
     restart: always
     environment:
       POSTGRES_PASSWORD: redmica
